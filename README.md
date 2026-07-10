@@ -209,7 +209,8 @@ Eniac-AB-Test/
 
 ```
 ---
-Author
+
+# Author
 
 Dr. Florian Hastreiter
 Junior Data Analyst | Analytics Engineer
