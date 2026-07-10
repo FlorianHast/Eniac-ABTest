@@ -97,11 +97,11 @@ To evaluate whether website version and user behavior are independent, a Chi-Squ
 
 ### Hypotheses
 
-**Null hypothesis (H₀):**
+**Null hypothesis ($H_{0}$):**
 
 > There is no significant difference in user behavior between website versions.
 
-**Alternative hypothesis (H₁):**
+**Alternative hypothesis ($H_{A}$):**
 
 > At least one website version produces significantly different user behavior.
 
