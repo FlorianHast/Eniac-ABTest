@@ -1,5 +1,7 @@
 # Eniac Website Redesign – A/B Testing Analysis
 
+ **Note:** This repository contains a fictional case study created for educational and portfolio purposes. Eniac is a fictional e-commerce company and does not represent a real business project.
+
 ## Project Overview
 
 This project is a **fictional business case study** developed to demonstrate an end-to-end A/B testing workflow for an e-commerce scenario.
