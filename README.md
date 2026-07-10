@@ -125,6 +125,49 @@ The adjusted significance level was calculated as:
 
 ---
 
+# Visualizations
+
+The following visualizations summarize the key findings of the A/B testing analysis.
+
+## Click-Through Rate (CTR) Comparison
+
+The CTR comparison shows the impact of different call-to-action (CTA) designs on user engagement.
+
+Version C achieved the highest CTR, while versions B and D showed a substantial decrease compared to the original website version (A).
+
+However, statistical testing is required to determine whether these differences are significant.
+
+![CTR by Website Version](reports/figures/ctr_by_version.png)
+
+
+---
+
+## Click Distribution by Website Version
+
+This 100% stacked bar chart shows the proportion of visitors who clicked or did not click the CTA button for each website variant.
+
+The visualization highlights that all versions received a comparable number of visitors, while click behavior differed between variants.
+
+![Click Distribution](reports/figures/click_distributions.png)
+
+
+---
+
+## Chi-Square Test Results
+
+Pairwise Chi-Square tests were performed to evaluate whether differences between website versions were statistically significant.
+
+The p-value comparison includes the Bonferroni-adjusted significance threshold:
+
+\[
+\alpha_{adjusted}=0.0167
+\]
+
+Results indicate significant differences for most comparisons, while version A and C did not show a statistically significant difference.
+
+![Chi-Square Test Results](reports/figures/chi-square-pvalues.png)
+---
+
 # Results
 
 Pairwise Chi-Square tests showed the following results:
