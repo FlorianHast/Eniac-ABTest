@@ -82,7 +82,7 @@ The following metrics were analyzed:
 The conversion rate was calculated as:
 
 $$
-\Conversion\ Rate = \frac{Conversions}{Visitors}
+Conversion\ Rate = \frac{Conversions}{Visitors}
 $$
 
 Visual comparisons were used to identify differences between website versions.
@@ -120,7 +120,7 @@ Since four website versions create multiple pairwise comparisons, a Bonferroni c
 The adjusted significance level was calculated as:
 
 $$
-\alpha_{adjusted} = \frac{\alpha}{number\ of\ comparisons}
+\alpha_{Bonferroni} = \frac{\alpha}{number\ of\ comparisons}
 $$
 
 ---
