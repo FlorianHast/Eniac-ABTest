@@ -155,15 +155,22 @@ This suggests that user behavior differs significantly depending on the website 
 
 # Business Recommendation
 
-Based on the statistical analysis:
+The analysis shows that changing the call-to-action button design had a significant impact on user behavior.
 
-- Versions B and D produce significantly different user behavior compared to other tested variants
-- Version C does not provide a measurable improvement compared to the original version (A)
-- The final implementation decision should consider both:
-  - statistical significance
-  - practical business impact (e.g., conversion rate improvement)
+| Version | CTR | Interpretation |
+|---|---:|---|
+| A (Control) | 2.02% | Baseline performance |
+| B ("SHOP NOW" in red) | 1.14% | Significant decrease compared to control |
+| C ("SEE DEALS") | 2.12% | Highest CTR, but no significant improvement over control |
+| D ("SEE DEALS" + red button) | 0.76% | Significant decrease compared to control |
 
-A/B testing results should therefore be combined with business KPIs before selecting the final website design.
+Key findings:
+
+- Version C achieved the highest click-through rate (CTR), but the improvement compared to the original version A was not statistically significant.
+- Changing only the button color (Version B) significantly reduced user engagement.
+- Combining the new wording with the red button (Version D) resulted in the lowest performance.
+
+Based on statistical significance and practical business impact, the recommendation would be to keep the original design (Version A). Although Version C shows a slightly higher CTR, there is insufficient statistical evidence that it provides a real improvement.
 
 ---
 
