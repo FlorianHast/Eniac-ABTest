@@ -1,1 +1,12 @@
+# Python
+__pycache__/
+*.pyc
 
+# Jupyter/Colab
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Temporary files
+*.log
