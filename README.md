@@ -148,7 +148,7 @@ This 100% stacked bar chart shows the proportion of visitors who clicked or did 
 
 The visualization highlights that all versions received a comparable number of visitors, while click behavior differed between variants.
 
-![Click Distribution](reports/figures/click_distributions.png)
+![Click Distribution](reports/figures/click_distribution.png)
 
 
 ---
