@@ -206,3 +206,13 @@ Eniac-AB-Test/
 │
 └── reports/
     └── figures/
+
+---
+
+Author
+
+Dr. Florian Hastreiter
+Junior Data Analyst | Analytics Engineer
+
+GitHub:
+https://github.com/FlorianHast
