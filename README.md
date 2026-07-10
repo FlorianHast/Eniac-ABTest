@@ -212,8 +212,8 @@ Eniac-AB-Test/
 
 # Author
 
-Dr. Florian Hastreiter
+**Dr. Florian Hastreiter**  
 Junior Data Analyst | Analytics Engineer
 
-GitHub:
-https://github.com/FlorianHast
+GitHub:  
+[github.com/FlorianHast](https://github.com/FlorianHast)
