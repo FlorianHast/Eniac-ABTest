@@ -83,7 +83,7 @@ The conversion rate was calculated as:
 
 $$
 \Conversion\ Rate = \frac{Conversions}{Visitors}
-§§
+$$
 
 Visual comparisons were used to identify differences between website versions.
 
