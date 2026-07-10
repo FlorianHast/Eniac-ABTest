@@ -81,9 +81,9 @@ The following metrics were analyzed:
 
 The conversion rate was calculated as:
 
-\[
-Conversion\ Rate = \frac{Conversions}{Visitors}
-\]
+$$
+\Conversion\ Rate = \frac{Conversions}{Visitors}
+§§
 
 Visual comparisons were used to identify differences between website versions.
 
@@ -107,9 +107,9 @@ To evaluate whether website version and user behavior are independent, a Chi-Squ
 
 Significance level:
 
-\[
+$$
 \alpha = 0.1
-\]
+$$
 
 ---
 
@@ -119,9 +119,9 @@ Since four website versions create multiple pairwise comparisons, a Bonferroni c
 
 The adjusted significance level was calculated as:
 
-\[
+$$
 \alpha_{adjusted} = \frac{\alpha}{number\ of\ comparisons}
-\]
+$$
 
 ---
 
@@ -159,9 +159,9 @@ Pairwise Chi-Square tests were performed to evaluate whether differences between
 
 The p-value comparison includes the Bonferroni-adjusted significance threshold:
 
-\[
+$$
 \alpha_{adjusted}=0.0167
-\]
+$$
 
 Results indicate significant differences for most comparisons, while version A and C did not show a statistically significant difference.
 
