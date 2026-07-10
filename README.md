@@ -24,130 +24,164 @@ This case study simulates a real-world data analytics workflow where business de
 
 ---
 
-Dataset
+## Dataset
 
-The dataset contains user interaction data from four website variants:
+The dataset contains user interaction data from four website variants.
 
-Version	Description
-A	Website version A (Control Group: 'SHOP NOW' button in white)
-B	Website version B ('SHOP NOW' button in red)
-C	Website version C ('SHOP NOW' changed to 'SEE DEALS')
-D	Website version D ('SHOP NOW' changed to 'SEE DEALS' and color red)
+The experiment evaluates the impact of different call-to-action (CTA) button designs:
+
+| Version | Description |
+|---|---|
+| A | Control Group: Original website version with a white **"SHOP NOW"** button |
+| B | Test Variant: **"SHOP NOW"** button changed to red |
+| C | Test Variant: CTA text changed from **"SHOP NOW"** to **"SEE DEALS"** |
+| D | Test Variant: CTA text changed to **"SEE DEALS"** and button color changed to red |
 
 Each version contains information about:
 
-Number of visitors
-Click interactions
-User actions on the website
-Conversion-related metrics
-Project Objectives
+- Number of visitors
+- Click interactions
+- User actions on the website
+- Conversion-related metrics
+
+---
+
+# Project Objectives
 
 The analysis aims to:
 
-Compare user engagement across different website versions
-Calculate conversion metrics
-Perform statistical hypothesis testing
-Determine whether observed differences are statistically significant
-Provide a data-driven recommendation for the website redesign
-Methodology
-1. Data Preparation
+- Compare user engagement across different website versions
+- Calculate conversion metrics
+- Perform statistical hypothesis testing
+- Determine whether observed differences are statistically significant
+- Provide a data-driven recommendation for the website redesign
+
+---
+
+# Methodology
+
+## 1. Data Preparation
 
 The analysis included:
 
-Loading and combining datasets
-Extracting relevant metrics from raw interaction data
-Cleaning and transforming variables
-Preparing contingency tables for statistical testing
-2. Exploratory Data Analysis
+- Loading and combining datasets
+- Extracting relevant metrics from raw interaction data
+- Cleaning and transforming variables
+- Preparing contingency tables for statistical testing
+
+---
+
+## 2. Exploratory Data Analysis
 
 The following metrics were analyzed:
 
-Number of visitors per version
-Number of clicks
-Click-through rates (CTR)
+- Number of visitors per version
+- Number of clicks
+- Click-through rates (CTR)
 
 The conversion rate was calculated as:
 
-[
+\[
 Conversion\ Rate = \frac{Conversions}{Visitors}
-]
+\]
 
 Visual comparisons were used to identify differences between website versions.
 
-Statistical Testing
-Chi-Square Test of Independence
+---
+
+# Statistical Testing
+
+## Chi-Square Test of Independence
 
 To evaluate whether website version and user behavior are independent, a Chi-Square test was applied.
 
-Hypotheses
+### Hypotheses
 
-Null hypothesis (H₀):
+**Null hypothesis (H₀):**
 
-There is no significant difference in user behavior between website versions.
+> There is no significant difference in user behavior between website versions.
 
-Alternative hypothesis (HA):
+**Alternative hypothesis (H₁):**
 
-At least one website version produces significantly different user behavior.
+> At least one website version produces significantly different user behavior.
 
 Significance level:
 
-[
+\[
 \alpha = 0.1
-]
+\]
 
-Multiple Comparison Correction
+---
+
+## Multiple Comparison Correction
 
 Since four website versions create multiple pairwise comparisons, a Bonferroni correction was applied to reduce the risk of false positives.
 
 The adjusted significance level was calculated as:
 
-[
+\[
 \alpha_{adjusted} = \frac{\alpha}{number\ of\ comparisons}
-]
+\]
 
-Results
+---
+
+# Results
 
 Pairwise Chi-Square tests showed the following results:
 
-Comparison	p-value	Result
-Bonferroni alpha: 0.0167
+**Bonferroni adjusted alpha: 0.0167**
 
-A vs. B -> 2.6731e-15: A and B differ significantly
-A vs. C -> 4.6484e-01: A and C show no significant difference
-A vs. D -> 3.0809e-33: A and D differ significantly
-B vs. C -> 6.9555e-18: B and C differ significantly
-B vs. D -> 2.3573e-05: B and D differ significantly
-C vs. D -> 6.4505e-37: C and D differ significantly
-Key Finding
+| Comparison | p-value | Result |
+|---|---:|---|
+| A vs. B | 2.6731e-15 | Significant difference |
+| A vs. C | 4.6484e-01 | No significant difference |
+| A vs. D | 3.0809e-33 | Significant difference |
+| B vs. C | 6.9555e-18 | Significant difference |
+| B vs. D | 2.3573e-05 | Significant difference |
+| C vs. D | 6.4505e-37 | Significant difference |
+
+---
+
+# Key Findings
 
 The analysis indicates that:
 
-Version A and C show no statistically significant difference
-All other combinations show statistically significant differences
+- **Version A and C show no statistically significant difference**
+- **All other combinations show statistically significant differences**
 
-This suggests that user behavior differs strongly depending on the website version.
+This suggests that user behavior differs significantly depending on the website version.
 
-Business Recommendation
+---
+
+# Business Recommendation
 
 Based on the statistical analysis:
 
-Versions B and D significantly differ from the other tested variants
-Version C does not provide a measurable improvement compared to version A
-The final implementation decision should consider both:
-statistical significance
-practical business impact (conversion rate improvement)
+- Versions B and D produce significantly different user behavior compared to other tested variants
+- Version C does not provide a measurable improvement compared to the original version (A)
+- The final implementation decision should consider both:
+  - statistical significance
+  - practical business impact (e.g., conversion rate improvement)
 
-A/B testing results should therefore be combined with conversion performance and business KPIs before selecting the final website design.
+A/B testing results should therefore be combined with business KPIs before selecting the final website design.
 
-Technologies Used
-Python
-Pandas
-NumPy
-SciPy
-Matplotlib
-Seaborn
-Google Colab
-Repository Structure
+---
+
+# Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- SciPy
+- Matplotlib
+- Seaborn
+- Google Colab
+
+---
+
+# Repository Structure
+
+```text
 Eniac-AB-Test/
 │
 ├── README.md
@@ -165,27 +199,3 @@ Eniac-AB-Test/
 │
 └── reports/
     └── figures/
-How to Run the Project
-
-Clone the repository:
-
-git clone https://github.com/FlorianHast/Eniac-ABTest.git
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Launch Jupyter Notebook:
-
-jupyter notebook
-
-Open:
-
-notebooks/Eniac_AB_Test.ipynb
-Author
-
-Florian Hastreiter
-Junior Data Analyst | Analytics Engineer
-
-GitHub:
-https://github.com/FlorianHast
